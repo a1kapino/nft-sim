@@ -1,5 +1,5 @@
-const SimNft = artifacts.require("sim-nft");
+const NftSim = artifacts.require("../contracts/NftSim");
 
 module.exports = function (deployer) {
-  deployer.deploy(SimNft);
+  deployer.deploy(NftSim);
 };

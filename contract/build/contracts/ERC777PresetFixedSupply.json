@@ -21697,39 +21697,39 @@
     "absolutePath": "project:/contracts/token/ERC777/presets/ERC777PresetFixedSupply.sol",
     "exportedSymbols": {
       "Address": [
-        26533
+        27203
       ],
       "Context": [
-        26921
+        27591
       ],
       "ERC777": [
-        25806
+        26476
       ],
       "ERC777PresetFixedSupply": [
-        26040
+        26710
       ],
       "IERC1820Registry": [
-        29134
+        29804
       ],
       "IERC20": [
-        20627
+        21297
       ],
       "IERC777": [
-        25965
+        26635
       ],
       "IERC777Recipient": [
-        25985
+        26655
       ],
       "IERC777Sender": [
-        26005
+        26675
       ]
     },
-    "id": 26041,
+    "id": 26711,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 26007,
+        "id": 26677,
         "literals": [
           "solidity",
           "^",
@@ -21742,11 +21742,11 @@
       {
         "absolutePath": "project:/contracts/token/ERC777/ERC777.sol",
         "file": "../ERC777.sol",
-        "id": 26008,
+        "id": 26678,
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
-        "scope": 26041,
-        "sourceUnit": 25807,
+        "scope": 26711,
+        "sourceUnit": 26477,
         "src": "145:23:205",
         "symbolAliases": [],
         "unitAlias": ""
@@ -21756,13 +21756,13 @@
         "baseContracts": [
           {
             "baseName": {
-              "id": 26010,
+              "id": 26680,
               "name": "ERC777",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 25806,
+              "referencedDeclaration": 26476,
               "src": "403:6:205"
             },
-            "id": 26011,
+            "id": 26681,
             "nodeType": "InheritanceSpecifier",
             "src": "403:6:205"
           }
@@ -21771,19 +21771,19 @@
         "contractDependencies": [],
         "contractKind": "contract",
         "documentation": {
-          "id": 26009,
+          "id": 26679,
           "nodeType": "StructuredDocumentation",
           "src": "172:193:205",
           "text": " @dev {ERC777} token, including:\n  - Preminted initial supply\n  - No access control mechanism (for minting/pausing) and hence no governance\n _Available since v3.4._"
         },
         "fullyImplemented": true,
-        "id": 26040,
+        "id": 26710,
         "linearizedBaseContracts": [
-          26040,
-          25806,
-          20627,
-          25965,
-          26921
+          26710,
+          26476,
+          21297,
+          26635,
+          27591
         ],
         "name": "ERC777PresetFixedSupply",
         "nameLocation": "376:23:205",
@@ -21791,7 +21791,7 @@
         "nodes": [
           {
             "body": {
-              "id": 26038,
+              "id": 26708,
               "nodeType": "Block",
               "src": "777:54:205",
               "statements": [
@@ -21799,11 +21799,11 @@
                   "expression": {
                     "arguments": [
                       {
-                        "id": 26032,
+                        "id": 26702,
                         "name": "owner",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 26023,
+                        "referencedDeclaration": 26693,
                         "src": "794:5:205",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -21811,11 +21811,11 @@
                         }
                       },
                       {
-                        "id": 26033,
+                        "id": 26703,
                         "name": "initialSupply",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 26021,
+                        "referencedDeclaration": 26691,
                         "src": "801:13:205",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -21824,7 +21824,7 @@
                       },
                       {
                         "hexValue": "",
-                        "id": 26034,
+                        "id": 26704,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -21840,7 +21840,7 @@
                       },
                       {
                         "hexValue": "",
-                        "id": 26035,
+                        "id": 26705,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -21874,21 +21874,21 @@
                           "typeString": "literal_string \"\""
                         }
                       ],
-                      "id": 26031,
+                      "id": 26701,
                       "name": "_mint",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        25292,
-                        25372
+                        25962,
+                        26042
                       ],
-                      "referencedDeclaration": 25292,
+                      "referencedDeclaration": 25962,
                       "src": "788:5:205",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_address_$_t_uint256_$_t_bytes_memory_ptr_$_t_bytes_memory_ptr_$returns$__$",
                         "typeString": "function (address,uint256,bytes memory,bytes memory)"
                       }
                     },
-                    "id": 26036,
+                    "id": 26706,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -21903,30 +21903,30 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 26037,
+                  "id": 26707,
                   "nodeType": "ExpressionStatement",
                   "src": "788:35:205"
                 }
               ]
             },
             "documentation": {
-              "id": 26012,
+              "id": 26682,
               "nodeType": "StructuredDocumentation",
               "src": "417:136:205",
               "text": " @dev Mints `initialSupply` amount of token and transfers them to `owner`.\n See {ERC777-constructor}."
             },
-            "id": 26039,
+            "id": 26709,
             "implemented": true,
             "kind": "constructor",
             "modifiers": [
               {
                 "arguments": [
                   {
-                    "id": 26026,
+                    "id": 26696,
                     "name": "name",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 26014,
+                    "referencedDeclaration": 26684,
                     "src": "745:4:205",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_memory_ptr",
@@ -21934,11 +21934,11 @@
                     }
                   },
                   {
-                    "id": 26027,
+                    "id": 26697,
                     "name": "symbol",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 26016,
+                    "referencedDeclaration": 26686,
                     "src": "751:6:205",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_memory_ptr",
@@ -21946,11 +21946,11 @@
                     }
                   },
                   {
-                    "id": 26028,
+                    "id": 26698,
                     "name": "defaultOperators",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 26019,
+                    "referencedDeclaration": 26689,
                     "src": "759:16:205",
                     "typeDescriptions": {
                       "typeIdentifier": "t_array$_t_address_$dyn_memory_ptr",
@@ -21958,13 +21958,13 @@
                     }
                   }
                 ],
-                "id": 26029,
+                "id": 26699,
                 "kind": "baseConstructorSpecifier",
                 "modifierName": {
-                  "id": 26025,
+                  "id": 26695,
                   "name": "ERC777",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 25806,
+                  "referencedDeclaration": 26476,
                   "src": "738:6:205"
                 },
                 "nodeType": "ModifierInvocation",
@@ -21975,17 +21975,17 @@
             "nameLocation": "-1:-1:-1",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 26024,
+              "id": 26694,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 26014,
+                  "id": 26684,
                   "mutability": "mutable",
                   "name": "name",
                   "nameLocation": "595:4:205",
                   "nodeType": "VariableDeclaration",
-                  "scope": 26039,
+                  "scope": 26709,
                   "src": "581:18:205",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -21994,7 +21994,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 26013,
+                    "id": 26683,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "581:6:205",
@@ -22007,12 +22007,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 26016,
+                  "id": 26686,
                   "mutability": "mutable",
                   "name": "symbol",
                   "nameLocation": "624:6:205",
                   "nodeType": "VariableDeclaration",
-                  "scope": 26039,
+                  "scope": 26709,
                   "src": "610:20:205",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -22021,7 +22021,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 26015,
+                    "id": 26685,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "610:6:205",
@@ -22034,12 +22034,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 26019,
+                  "id": 26689,
                   "mutability": "mutable",
                   "name": "defaultOperators",
                   "nameLocation": "658:16:205",
                   "nodeType": "VariableDeclaration",
-                  "scope": 26039,
+                  "scope": 26709,
                   "src": "641:33:205",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -22049,7 +22049,7 @@
                   },
                   "typeName": {
                     "baseType": {
-                      "id": 26017,
+                      "id": 26687,
                       "name": "address",
                       "nodeType": "ElementaryTypeName",
                       "src": "641:7:205",
@@ -22059,7 +22059,7 @@
                         "typeString": "address"
                       }
                     },
-                    "id": 26018,
+                    "id": 26688,
                     "nodeType": "ArrayTypeName",
                     "src": "641:9:205",
                     "typeDescriptions": {
@@ -22071,12 +22071,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 26021,
+                  "id": 26691,
                   "mutability": "mutable",
                   "name": "initialSupply",
                   "nameLocation": "693:13:205",
                   "nodeType": "VariableDeclaration",
-                  "scope": 26039,
+                  "scope": 26709,
                   "src": "685:21:205",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -22085,7 +22085,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 26020,
+                    "id": 26690,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "685:7:205",
@@ -22098,12 +22098,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 26023,
+                  "id": 26693,
                   "mutability": "mutable",
                   "name": "owner",
                   "nameLocation": "725:5:205",
                   "nodeType": "VariableDeclaration",
-                  "scope": 26039,
+                  "scope": 26709,
                   "src": "717:13:205",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -22112,7 +22112,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 26022,
+                    "id": 26692,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "717:7:205",
@@ -22128,19 +22128,19 @@
               "src": "570:167:205"
             },
             "returnParameters": {
-              "id": 26030,
+              "id": 26700,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "777:0:205"
             },
-            "scope": 26040,
+            "scope": 26710,
             "src": "559:272:205",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "public"
           }
         ],
-        "scope": 26041,
+        "scope": 26711,
         "src": "367:467:205",
         "usedErrors": []
       }
@@ -22151,39 +22151,39 @@
     "absolutePath": "project:/contracts/token/ERC777/presets/ERC777PresetFixedSupply.sol",
     "exportedSymbols": {
       "Address": [
-        26533
+        27203
       ],
       "Context": [
-        26921
+        27591
       ],
       "ERC777": [
-        25806
+        26476
       ],
       "ERC777PresetFixedSupply": [
-        26040
+        26710
       ],
       "IERC1820Registry": [
-        29134
+        29804
       ],
       "IERC20": [
-        20627
+        21297
       ],
       "IERC777": [
-        25965
+        26635
       ],
       "IERC777Recipient": [
-        25985
+        26655
       ],
       "IERC777Sender": [
-        26005
+        26675
       ]
     },
-    "id": 26041,
+    "id": 26711,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 26007,
+        "id": 26677,
         "literals": [
           "solidity",
           "^",
@@ -22196,11 +22196,11 @@
       {
         "absolutePath": "project:/contracts/token/ERC777/ERC777.sol",
         "file": "../ERC777.sol",
-        "id": 26008,
+        "id": 26678,
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
-        "scope": 26041,
-        "sourceUnit": 25807,
+        "scope": 26711,
+        "sourceUnit": 26477,
         "src": "145:23:205",
         "symbolAliases": [],
         "unitAlias": ""
@@ -22210,13 +22210,13 @@
         "baseContracts": [
           {
             "baseName": {
-              "id": 26010,
+              "id": 26680,
               "name": "ERC777",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 25806,
+              "referencedDeclaration": 26476,
               "src": "403:6:205"
             },
-            "id": 26011,
+            "id": 26681,
             "nodeType": "InheritanceSpecifier",
             "src": "403:6:205"
           }
@@ -22225,19 +22225,19 @@
         "contractDependencies": [],
         "contractKind": "contract",
         "documentation": {
-          "id": 26009,
+          "id": 26679,
           "nodeType": "StructuredDocumentation",
           "src": "172:193:205",
           "text": " @dev {ERC777} token, including:\n  - Preminted initial supply\n  - No access control mechanism (for minting/pausing) and hence no governance\n _Available since v3.4._"
         },
         "fullyImplemented": true,
-        "id": 26040,
+        "id": 26710,
         "linearizedBaseContracts": [
-          26040,
-          25806,
-          20627,
-          25965,
-          26921
+          26710,
+          26476,
+          21297,
+          26635,
+          27591
         ],
         "name": "ERC777PresetFixedSupply",
         "nameLocation": "376:23:205",
@@ -22245,7 +22245,7 @@
         "nodes": [
           {
             "body": {
-              "id": 26038,
+              "id": 26708,
               "nodeType": "Block",
               "src": "777:54:205",
               "statements": [
@@ -22253,11 +22253,11 @@
                   "expression": {
                     "arguments": [
                       {
-                        "id": 26032,
+                        "id": 26702,
                         "name": "owner",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 26023,
+                        "referencedDeclaration": 26693,
                         "src": "794:5:205",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -22265,11 +22265,11 @@
                         }
                       },
                       {
-                        "id": 26033,
+                        "id": 26703,
                         "name": "initialSupply",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 26021,
+                        "referencedDeclaration": 26691,
                         "src": "801:13:205",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -22278,7 +22278,7 @@
                       },
                       {
                         "hexValue": "",
-                        "id": 26034,
+                        "id": 26704,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -22294,7 +22294,7 @@
                       },
                       {
                         "hexValue": "",
-                        "id": 26035,
+                        "id": 26705,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -22328,21 +22328,21 @@
                           "typeString": "literal_string \"\""
                         }
                       ],
-                      "id": 26031,
+                      "id": 26701,
                       "name": "_mint",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        25292,
-                        25372
+                        25962,
+                        26042
                       ],
-                      "referencedDeclaration": 25292,
+                      "referencedDeclaration": 25962,
                       "src": "788:5:205",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_address_$_t_uint256_$_t_bytes_memory_ptr_$_t_bytes_memory_ptr_$returns$__$",
                         "typeString": "function (address,uint256,bytes memory,bytes memory)"
                       }
                     },
-                    "id": 26036,
+                    "id": 26706,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -22357,30 +22357,30 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 26037,
+                  "id": 26707,
                   "nodeType": "ExpressionStatement",
                   "src": "788:35:205"
                 }
               ]
             },
             "documentation": {
-              "id": 26012,
+              "id": 26682,
               "nodeType": "StructuredDocumentation",
               "src": "417:136:205",
               "text": " @dev Mints `initialSupply` amount of token and transfers them to `owner`.\n See {ERC777-constructor}."
             },
-            "id": 26039,
+            "id": 26709,
             "implemented": true,
             "kind": "constructor",
             "modifiers": [
               {
                 "arguments": [
                   {
-                    "id": 26026,
+                    "id": 26696,
                     "name": "name",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 26014,
+                    "referencedDeclaration": 26684,
                     "src": "745:4:205",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_memory_ptr",
@@ -22388,11 +22388,11 @@
                     }
                   },
                   {
-                    "id": 26027,
+                    "id": 26697,
                     "name": "symbol",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 26016,
+                    "referencedDeclaration": 26686,
                     "src": "751:6:205",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_memory_ptr",
@@ -22400,11 +22400,11 @@
                     }
                   },
                   {
-                    "id": 26028,
+                    "id": 26698,
                     "name": "defaultOperators",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 26019,
+                    "referencedDeclaration": 26689,
                     "src": "759:16:205",
                     "typeDescriptions": {
                       "typeIdentifier": "t_array$_t_address_$dyn_memory_ptr",
@@ -22412,13 +22412,13 @@
                     }
                   }
                 ],
-                "id": 26029,
+                "id": 26699,
                 "kind": "baseConstructorSpecifier",
                 "modifierName": {
-                  "id": 26025,
+                  "id": 26695,
                   "name": "ERC777",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 25806,
+                  "referencedDeclaration": 26476,
                   "src": "738:6:205"
                 },
                 "nodeType": "ModifierInvocation",
@@ -22429,17 +22429,17 @@
             "nameLocation": "-1:-1:-1",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 26024,
+              "id": 26694,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 26014,
+                  "id": 26684,
                   "mutability": "mutable",
                   "name": "name",
                   "nameLocation": "595:4:205",
                   "nodeType": "VariableDeclaration",
-                  "scope": 26039,
+                  "scope": 26709,
                   "src": "581:18:205",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -22448,7 +22448,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 26013,
+                    "id": 26683,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "581:6:205",
@@ -22461,12 +22461,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 26016,
+                  "id": 26686,
                   "mutability": "mutable",
                   "name": "symbol",
                   "nameLocation": "624:6:205",
                   "nodeType": "VariableDeclaration",
-                  "scope": 26039,
+                  "scope": 26709,
                   "src": "610:20:205",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -22475,7 +22475,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 26015,
+                    "id": 26685,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "610:6:205",
@@ -22488,12 +22488,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 26019,
+                  "id": 26689,
                   "mutability": "mutable",
                   "name": "defaultOperators",
                   "nameLocation": "658:16:205",
                   "nodeType": "VariableDeclaration",
-                  "scope": 26039,
+                  "scope": 26709,
                   "src": "641:33:205",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -22503,7 +22503,7 @@
                   },
                   "typeName": {
                     "baseType": {
-                      "id": 26017,
+                      "id": 26687,
                       "name": "address",
                       "nodeType": "ElementaryTypeName",
                       "src": "641:7:205",
@@ -22513,7 +22513,7 @@
                         "typeString": "address"
                       }
                     },
-                    "id": 26018,
+                    "id": 26688,
                     "nodeType": "ArrayTypeName",
                     "src": "641:9:205",
                     "typeDescriptions": {
@@ -22525,12 +22525,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 26021,
+                  "id": 26691,
                   "mutability": "mutable",
                   "name": "initialSupply",
                   "nameLocation": "693:13:205",
                   "nodeType": "VariableDeclaration",
-                  "scope": 26039,
+                  "scope": 26709,
                   "src": "685:21:205",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -22539,7 +22539,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 26020,
+                    "id": 26690,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "685:7:205",
@@ -22552,12 +22552,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 26023,
+                  "id": 26693,
                   "mutability": "mutable",
                   "name": "owner",
                   "nameLocation": "725:5:205",
                   "nodeType": "VariableDeclaration",
-                  "scope": 26039,
+                  "scope": 26709,
                   "src": "717:13:205",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -22566,7 +22566,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 26022,
+                    "id": 26692,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "717:7:205",
@@ -22582,19 +22582,19 @@
               "src": "570:167:205"
             },
             "returnParameters": {
-              "id": 26030,
+              "id": 26700,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "777:0:205"
             },
-            "scope": 26040,
+            "scope": 26710,
             "src": "559:272:205",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "public"
           }
         ],
-        "scope": 26041,
+        "scope": 26711,
         "src": "367:467:205",
         "usedErrors": []
       }
@@ -22607,7 +22607,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.4",
-  "updatedAt": "2022-02-17T11:30:03.566Z",
+  "updatedAt": "2022-02-17T11:42:22.470Z",
   "devdoc": {
     "details": "{ERC777} token, including:  - Preminted initial supply  - No access control mechanism (for minting/pausing) and hence no governance _Available since v3.4._",
     "kind": "dev",

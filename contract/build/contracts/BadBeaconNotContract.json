@@ -320,26 +320,26 @@
       "name": "#utility.yul"
     }
   ],
-  "sourceMap": "93:136:55:-:0;;;;;;;;;;;;;;;;;;;",
-  "deployedSourceMap": "93:136:55:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;130:96;;;:::i;:::-;;;;;;;:::i;:::-;;;;;;;;;179:7;214:3;199:19;;130:96;:::o;7:126:241:-;44:7;84:42;77:5;73:54;62:65;;7:126;;;:::o;139:96::-;176:7;205:24;223:5;205:24;:::i;:::-;194:35;;139:96;;;:::o;241:118::-;328:24;346:5;328:24;:::i;:::-;323:3;316:37;241:118;;:::o;365:222::-;458:4;496:2;485:9;481:18;473:26;;509:71;577:1;566:9;562:17;553:6;509:71;:::i;:::-;365:222;;;;:::o",
+  "sourceMap": "93:136:56:-:0;;;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "93:136:56:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;130:96;;;:::i;:::-;;;;;;;:::i;:::-;;;;;;;;;179:7;214:3;199:19;;130:96;:::o;7:126:241:-;44:7;84:42;77:5;73:54;62:65;;7:126;;;:::o;139:96::-;176:7;205:24;223:5;205:24;:::i;:::-;194:35;;139:96;;;:::o;241:118::-;328:24;346:5;328:24;:::i;:::-;323:3;316:37;241:118;;:::o;365:222::-;458:4;496:2;485:9;481:18;473:26;;509:71;577:1;566:9;562:17;553:6;509:71;:::i;:::-;365:222;;;;:::o",
   "source": "// SPDX-License-Identifier: MIT\r\n\r\npragma solidity ^0.8.0;\r\n\r\ncontract BadBeaconNoImpl {}\r\n\r\ncontract BadBeaconNotContract {\r\n    function implementation() external pure returns (address) {\r\n        return address(0x1);\r\n    }\r\n}\r\n",
   "sourcePath": "C:\\Users\\Alexandr\\dev\\nft-sim\\contract\\contracts\\mocks\\BadBeacon.sol",
   "ast": {
     "absolutePath": "project:/contracts/mocks/BadBeacon.sol",
     "exportedSymbols": {
       "BadBeaconNoImpl": [
-        7302
+        8003
       ],
       "BadBeaconNotContract": [
-        7314
+        8015
       ]
     },
-    "id": 7315,
+    "id": 8016,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 7301,
+        "id": 8002,
         "literals": [
           "solidity",
           "^",
@@ -347,7 +347,7 @@
           ".0"
         ],
         "nodeType": "PragmaDirective",
-        "src": "35:23:55"
+        "src": "35:23:56"
       },
       {
         "abstract": false,
@@ -356,16 +356,16 @@
         "contractDependencies": [],
         "contractKind": "contract",
         "fullyImplemented": true,
-        "id": 7302,
+        "id": 8003,
         "linearizedBaseContracts": [
-          7302
+          8003
         ],
         "name": "BadBeaconNoImpl",
-        "nameLocation": "71:15:55",
+        "nameLocation": "71:15:56",
         "nodeType": "ContractDefinition",
         "nodes": [],
-        "scope": 7315,
-        "src": "62:27:55",
+        "scope": 8016,
+        "src": "62:27:56",
         "usedErrors": []
       },
       {
@@ -375,33 +375,33 @@
         "contractDependencies": [],
         "contractKind": "contract",
         "fullyImplemented": true,
-        "id": 7314,
+        "id": 8015,
         "linearizedBaseContracts": [
-          7314
+          8015
         ],
         "name": "BadBeaconNotContract",
-        "nameLocation": "102:20:55",
+        "nameLocation": "102:20:56",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": {
-              "id": 7312,
+              "id": 8013,
               "nodeType": "Block",
-              "src": "188:38:55",
+              "src": "188:38:56",
               "statements": [
                 {
                   "expression": {
                     "arguments": [
                       {
                         "hexValue": "307831",
-                        "id": 7309,
+                        "id": 8010,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
                         "kind": "number",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "214:3:55",
+                        "src": "214:3:56",
                         "typeDescriptions": {
                           "typeIdentifier": "t_rational_1_by_1",
                           "typeString": "int_const 1"
@@ -416,26 +416,26 @@
                           "typeString": "int_const 1"
                         }
                       ],
-                      "id": 7308,
+                      "id": 8009,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
                       "lValueRequested": false,
                       "nodeType": "ElementaryTypeNameExpression",
-                      "src": "206:7:55",
+                      "src": "206:7:56",
                       "typeDescriptions": {
                         "typeIdentifier": "t_type$_t_address_$",
                         "typeString": "type(address)"
                       },
                       "typeName": {
-                        "id": 7307,
+                        "id": 8008,
                         "name": "address",
                         "nodeType": "ElementaryTypeName",
-                        "src": "206:7:55",
+                        "src": "206:7:56",
                         "typeDescriptions": {}
                       }
                     },
-                    "id": 7310,
+                    "id": 8011,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
@@ -443,47 +443,47 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "206:12:55",
+                    "src": "206:12:56",
                     "tryCall": false,
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
                     }
                   },
-                  "functionReturnParameters": 7306,
-                  "id": 7311,
+                  "functionReturnParameters": 8007,
+                  "id": 8012,
                   "nodeType": "Return",
-                  "src": "199:19:55"
+                  "src": "199:19:56"
                 }
               ]
             },
             "functionSelector": "5c60da1b",
-            "id": 7313,
+            "id": 8014,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "implementation",
-            "nameLocation": "139:14:55",
+            "nameLocation": "139:14:56",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 7303,
+              "id": 8004,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "153:2:55"
+              "src": "153:2:56"
             },
             "returnParameters": {
-              "id": 7306,
+              "id": 8007,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7305,
+                  "id": 8006,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7313,
-                  "src": "179:7:55",
+                  "scope": 8014,
+                  "src": "179:7:56",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -491,10 +491,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 7304,
+                    "id": 8005,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "179:7:55",
+                    "src": "179:7:56",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -504,38 +504,38 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "178:9:55"
+              "src": "178:9:56"
             },
-            "scope": 7314,
-            "src": "130:96:55",
+            "scope": 8015,
+            "src": "130:96:56",
             "stateMutability": "pure",
             "virtual": false,
             "visibility": "external"
           }
         ],
-        "scope": 7315,
-        "src": "93:136:55",
+        "scope": 8016,
+        "src": "93:136:56",
         "usedErrors": []
       }
     ],
-    "src": "35:196:55"
+    "src": "35:196:56"
   },
   "legacyAST": {
     "absolutePath": "project:/contracts/mocks/BadBeacon.sol",
     "exportedSymbols": {
       "BadBeaconNoImpl": [
-        7302
+        8003
       ],
       "BadBeaconNotContract": [
-        7314
+        8015
       ]
     },
-    "id": 7315,
+    "id": 8016,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 7301,
+        "id": 8002,
         "literals": [
           "solidity",
           "^",
@@ -543,7 +543,7 @@
           ".0"
         ],
         "nodeType": "PragmaDirective",
-        "src": "35:23:55"
+        "src": "35:23:56"
       },
       {
         "abstract": false,
@@ -552,16 +552,16 @@
         "contractDependencies": [],
         "contractKind": "contract",
         "fullyImplemented": true,
-        "id": 7302,
+        "id": 8003,
         "linearizedBaseContracts": [
-          7302
+          8003
         ],
         "name": "BadBeaconNoImpl",
-        "nameLocation": "71:15:55",
+        "nameLocation": "71:15:56",
         "nodeType": "ContractDefinition",
         "nodes": [],
-        "scope": 7315,
-        "src": "62:27:55",
+        "scope": 8016,
+        "src": "62:27:56",
         "usedErrors": []
       },
       {
@@ -571,33 +571,33 @@
         "contractDependencies": [],
         "contractKind": "contract",
         "fullyImplemented": true,
-        "id": 7314,
+        "id": 8015,
         "linearizedBaseContracts": [
-          7314
+          8015
         ],
         "name": "BadBeaconNotContract",
-        "nameLocation": "102:20:55",
+        "nameLocation": "102:20:56",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": {
-              "id": 7312,
+              "id": 8013,
               "nodeType": "Block",
-              "src": "188:38:55",
+              "src": "188:38:56",
               "statements": [
                 {
                   "expression": {
                     "arguments": [
                       {
                         "hexValue": "307831",
-                        "id": 7309,
+                        "id": 8010,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
                         "kind": "number",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "214:3:55",
+                        "src": "214:3:56",
                         "typeDescriptions": {
                           "typeIdentifier": "t_rational_1_by_1",
                           "typeString": "int_const 1"
@@ -612,26 +612,26 @@
                           "typeString": "int_const 1"
                         }
                       ],
-                      "id": 7308,
+                      "id": 8009,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
                       "lValueRequested": false,
                       "nodeType": "ElementaryTypeNameExpression",
-                      "src": "206:7:55",
+                      "src": "206:7:56",
                       "typeDescriptions": {
                         "typeIdentifier": "t_type$_t_address_$",
                         "typeString": "type(address)"
                       },
                       "typeName": {
-                        "id": 7307,
+                        "id": 8008,
                         "name": "address",
                         "nodeType": "ElementaryTypeName",
-                        "src": "206:7:55",
+                        "src": "206:7:56",
                         "typeDescriptions": {}
                       }
                     },
-                    "id": 7310,
+                    "id": 8011,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
@@ -639,47 +639,47 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "206:12:55",
+                    "src": "206:12:56",
                     "tryCall": false,
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
                     }
                   },
-                  "functionReturnParameters": 7306,
-                  "id": 7311,
+                  "functionReturnParameters": 8007,
+                  "id": 8012,
                   "nodeType": "Return",
-                  "src": "199:19:55"
+                  "src": "199:19:56"
                 }
               ]
             },
             "functionSelector": "5c60da1b",
-            "id": 7313,
+            "id": 8014,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "implementation",
-            "nameLocation": "139:14:55",
+            "nameLocation": "139:14:56",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 7303,
+              "id": 8004,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "153:2:55"
+              "src": "153:2:56"
             },
             "returnParameters": {
-              "id": 7306,
+              "id": 8007,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7305,
+                  "id": 8006,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7313,
-                  "src": "179:7:55",
+                  "scope": 8014,
+                  "src": "179:7:56",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -687,10 +687,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 7304,
+                    "id": 8005,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "179:7:55",
+                    "src": "179:7:56",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -700,21 +700,21 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "178:9:55"
+              "src": "178:9:56"
             },
-            "scope": 7314,
-            "src": "130:96:55",
+            "scope": 8015,
+            "src": "130:96:56",
             "stateMutability": "pure",
             "virtual": false,
             "visibility": "external"
           }
         ],
-        "scope": 7315,
-        "src": "93:136:55",
+        "scope": 8016,
+        "src": "93:136:56",
         "usedErrors": []
       }
     ],
-    "src": "35:196:55"
+    "src": "35:196:56"
   },
   "compiler": {
     "name": "solc",
@@ -722,7 +722,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.4",
-  "updatedAt": "2022-02-17T11:29:59.991Z",
+  "updatedAt": "2022-02-17T11:42:19.459Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},

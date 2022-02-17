@@ -1,6 +1,6 @@
-pragma solidity ^0.8.7;
-
-import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC721/ERC721.sol";
+pragma solidity ^0.8.11;
+// SPDX-License-Identifier: MIT
+import "./token/ERC721/ERC721.sol";
 
 contract SimCardNft is ERC721 {
 

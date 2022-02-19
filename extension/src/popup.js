@@ -4,14 +4,14 @@ import { ethers } from 'ethers';
 (function() {
   function onLoad() {
     const onStartClick = async () => {
-      const textArea = document.getElementById('mnemonicTextArea');
-      var output = document.getElementById('output');
-      const hdNode = ethers.utils.HDNode.fromMnemonic(textArea.value);
-      
-      const provider = new ethers.providers.EtherscanProvider("rinkeby");
-      const balance = await provider.getBalance(hdNode.address);
-      // output.innerHTML = balance;
-      output.innerHTML = hdNode.address;
+      const mnemonicInput = document.getElementById('mnemonicTextArea');
+      const challengeInput = document.getElementById('challengeTextArea');
+      var addressDiv = document.getElementById('address');
+      var signedChallengeDiv = document.getElementById('signedChallenge');
+      const wallet = ethers.Wallet.fromMnemonic(mnemonicInput.value);
+      addressDiv.innerHTML = wallet.address;
+      const signedMessage = await wallet.signMessage(challengeInput.value);
+      signedChallengeDiv.innerHTML = signedMessage;
     }
     var startButton = document.getElementById('startButton');
     startButton.addEventListener("click", onStartClick);

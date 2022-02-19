@@ -8,13 +8,13 @@ const web3 = new Web3("https://rinkeby.infura.io/v3/9d3ffeb0fcc446aab36e9264a117
 app.get('/mint', (req, res) => {
   const contractAddress = "0xFcECFe8a10724eF61B2Df1F0E50D1e576F1432c8";
   const nftContract = new web3.eth.Contract(Abi.abi, contractAddress);
-  const query = nftContract.methods.mint("0xCD68f6E337d2072C83d5C0063d5BFBc378D8B6BB", "0x380634886650");
+  const query = nftContract.methods.mint("0x9bB900050292127dC321c492301D6FbE0b871406", "0x380634886600");
   const encodedABI = query.encodeABI();
-  const key = "0x21a2c840f705dc08eec43465d8e6a9017202e7bf59d840c38a65791bc6cda63c";
+  const key = "0x56e8aaa9ceeb33915baa23cc3dcab8d63c1833031fbabb2a3830155d6fc59fdb";
   web3.eth.accounts.signTransaction(
     {
       data: encodedABI,
-      from: "0xCD68f6E337d2072C83d5C0063d5BFBc378D8B6BB",
+      from: "0x9bB900050292127dC321c492301D6FbE0b871406",
       gas: 2000000,
       to: contractAddress,
     },
